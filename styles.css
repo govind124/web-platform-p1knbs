@@ -1,0 +1,32 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#root {
+  background-color: blueviolet;
+  border: 3px solid gray;
+  width: auto fit-content;
+}
+.folder {
+  padding-left: 20px;
+  background-image: url('folder.png');
+  background-repeat: no-repeat;
+}
+
+.folder > ul {
+  display: none;
+}
+
+.folder.open > ul {
+  display: block;
+}
+
+.file {
+  padding-left: 20px;
+  background-image: url('file.png');
+  background-repeat: no-repeat;
+}
+#same {
+  cursor: pointer;
+}
